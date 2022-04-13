@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>RiverMarashiAndrew</title>
+<!--    
+
+
+
+                    website made by River Marashi Andrew 
+                    @river.joon
+                    river.mka@gmail.com 
+
+
+-->
+
+</head>
+
+<style>
+
+ html {
+    scroll-behavior: smooth;
+
+}
+
+
+.bannermenu{
+    width: 100%;
+    background-color: white;
+    height: 3vw;
+    
+    z-index: 1;
+    color: black;
+    display:block;
+    margin-left: 30px;
+    margin-top: 20px;
+            
+
+
+
+}
+
+ .image{
+    width: 70%;
+}
+
+a {
+
+            color: black;
+            text-decoration: none;
+}
+
+body {
+            background-color: white;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+}
+
+.subheader{
+    font-family: helvetica;
+    font-size: 15pt;
+    text-align: center;
+
+
+}
+
+
+#header{
+    font-family: helvetica;
+    font-size: 20pt;
+    text-align: left;
+    font-style: italic;
+    text-decoration: none;
+    color: black;
+}
+
+#header: hover{
+    color: pink;
+}
+
+.filler{
+    height: 9vw;
+    background-color: white;
+}
+
+.image:hover{
+    width: 10vw;
+}
+
+
+
+
+
+
+
+
+
+
+        .grid {
+        display: grid;
+        position: absolute;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10vw;
+        grid-row-gap: 30px;
+        width: 100%;
+        height: 30vw;
+        margin: auto;           
+        padding: 10px;           
+        margin-left: auto;
+        margin-right: auto;
+        z-index: -1;
+
+        top: 5vw;
+
+        animation-name: fade;           
+        animation-duration: 8000ms;         
+        animation-timing-function: 1000ms;          
+        animation-iteration-count: 1;
+        
+        animation-fill-mode: forwards;
+
+        }
+
+
+/*#textone{
+    font-size: 20pt;
+    font-family: helvetica;
+    position: absolute;
+    display: block;
+    background-color: blue;
+    width: 100%;
+    height: 5vw;    
+    text-align: center;
+    margin: auto;
+    
+
+}
+
+#texttwo{
+    font-size: 20pt;
+    font-family: helvetica;
+    position: absolute;
+    display: block;
+    background-color: red;  
+    
+}*/
+
+.text{
+    font-size: 14pt;
+    font-family: baskerville;
+    position: absolute;
+    display: block;
+    /*background-color: blue;*/
+    
+        
+    text-align: center;
+
+    width: 40vw;
+    left: 30%;
+
+    
+
+}
+
+
+
+#full{
+    top: 90vw;
+    position: absolute;
+    width: 100%;
+    background-color: lime;
+    height: 100px;
+}
+
+.large {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    /*background-color: pink;*/
+}
+
+
+#gridtwo {
+        display: grid;
+        position: absolute;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-column-gap: 10vw;
+        grid-row-gap: 10vw;
+        width: 100%;
+        height: 300vw;
+        margin: auto;           
+        padding: 10px;           
+        margin-left: auto;
+        margin-right: auto;
+        z-index: -1;
+
+        top: 150vw;
+
+        animation-name: fade;           
+        animation-duration: 8000ms;         
+        animation-timing-function: 1000ms;          
+        animation-iteration-count: 1;
+        
+        animation-fill-mode: forwards;
+
+        
+}
+
+#button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    font-family: helvetica;
+    font-style: italic;
+    font-size: 20pt;
+}
+
+#button:hover {
+    color: pink;
+}
+
+#textcv{
+    display:block;
+    font-family: Garamond;
+    font-size: 14pt;
+    margin-left: 30px;
+}
+a:hover{
+    color:pink;
+    text-decoration: underline;
+}
+
+/*
+
+FOR MOBILE
+
+
+
+
+
+
+
+
+
+FOR MOBILE
+*/
+
+@media only screen and (max-width: 1650px) {
+
+        #button {
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: black;
+        background-color: white;
+        font-family: helvetica;
+        font-style: italic;
+        font-size: 30pt;
+    }
+
+    .bannermenu{
+        width: 100%;
+        background-color: white;
+        height: 13%;
+        position: fixed;
+        z-index: 1;
+        color: black;
+                
+    }
+
+        .grid {
+        display: grid;
+        position: absolute;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10vw;
+        grid-row-gap: 30px;
+        width: 100%;
+        height: 30vw;
+        margin: auto;           
+        padding: 10px;           
+        margin-left: auto;
+        margin-right: auto;
+        z-index: -1;
+
+        top: 25vw;
+
+        }
+
+        #gridtwo {
+        display: grid;
+        position: absolute;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-column-gap: 40vw;
+        grid-row-gap: 50vw;
+        width: 100%;
+        height: 300vw;
+        margin: auto;           
+        padding: 10px;           
+        margin-left: auto;
+        margin-right: auto;
+        z-index: -1;
+
+        top: 250vw;
+    }
+
+.text{
+    font-size: 10pt;
+    font-family: baskerville;
+    position: absolute;
+    display: block;
+    /*background-color: blue;*/
+    
+        
+    text-align: center;
+
+    width: 40vw;
+    left: 30%;
+
+}
+
+
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="bannermenu">
+<div id="header"><a href="riverportfolio.html">river marashi andrew</a> <a href="rivercv.html">cv+contact</a> 
+
+
+
+</div>
+
+
+
+
+
+    <div id="textcv"> <p> 
+
+   <!--  River Marashi Andrew is a transfemme multi-media artist and is currently a TTTism Collaborator <br> along  with learning to draw tattoos with the help of S. Tamez. Her intention is to provide gender <br> affirming tattoos for trans and non-binary people. She recently finished her essay entitled Floating <br> Above and is using image making to document her physical transition. She graduated from Parsons <br> School of Design with a BFA in Communication Design. <br><br><br> -->
+
+    river.mka@gmail.com <br><br>
+
+    Experience<br><br>
+
+    TTTism Collaborator July 2021-Present<br>
+    TTTism Social Media Manager August 2021-Present<br>
+    Maxime Plescia-Büchi Tattoo Assistant SBLA June-July 2021<br>
+    Gayletter Intern October-December 2019<br>
+    MILK Studios Equipment Intern August-October 2019 <br><br>
+
+    Education<br><br>
+
+    S. Tamez This Time Tmrw September 2021-Present <br>
+    Parsons School of Design BFA Communication Design 2018-2022 <br>
+
+
+
+
+
+</p></div>
+
+
+
+
+ 
+<script>
+// document.getElementById("image").onmouseover = function() {mouseOver()};
+
+// function mouseOver(){
+//  var scrollHere = document.getElementById("image");
+//  function scrollTo(scrollHere);
+// }
+
+// function scrollTo() {
+//   var elmnt = document.getElementById("content");
+//   elmnt.scrollIntoView();
+// }
+
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
