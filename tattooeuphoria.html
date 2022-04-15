@@ -21,7 +21,7 @@
 
 <style>
 
- html {
+html {
     scroll-behavior: smooth;
 
 }
@@ -62,6 +62,7 @@ body {
 
 
 
+
 #header{
 	font-family: helvetica;
 	font-size: 20pt;
@@ -97,24 +98,7 @@ body {
 }
 
 
-#grid {
-        display: grid;
-        position: absolute;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        grid-column-gap: 5vw;
-        grid-row-gap: 30px;
-        width: 80%;
-        height: 30vw;
-        margin: auto;           
-        padding: 10px;           
-        margin-left: auto;
-        margin-right: auto;
-        z-index: -1;
 
-        top: 10%;
-
-}
 
 #imagegrid {
         display: grid;
@@ -203,7 +187,6 @@ a:hover{
 	color:pink;
 	text-decoration: underline;
 }
-
 /*
 
 FOR MOBILE
@@ -221,6 +204,10 @@ FOR MOBILE
 
 @media only screen and (max-width: 1350px) {
 
+	html {
+    scroll-behavior: smooth;
+
+}
 	body {
             background-color: white;
             width: 100%;
@@ -230,26 +217,7 @@ FOR MOBILE
 			overflow-y: scroll; /* Show vertical scrollbar */
 }
 
-		#button {
-		border: none;
-		outline: none;
-		cursor: pointer;
-		color: black;
-		background-color: white;
-		font-family: helvetica;
-		font-style: italic;
-		font-size: 30pt;
-	}
 
-	.bannermenu{
-		width: 100%;
-		background-color: white;
-		height: 13%;
-		position: fixed;
-		z-index: 1;
-		color: black;
-				
-	}
 
 	#imagegrid {
         display: grid;
